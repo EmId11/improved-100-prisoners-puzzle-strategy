@@ -45,9 +45,27 @@ By detecting when a row contains an unexpected concentration of numbers with sim
    - The end of the current row
 3. This pattern-recognition approach allows for more efficient use of the 50-box limit by focusing the search on rows where the prisoner's number is statistically more likely to be found
 
-## Usage
+## Installation
 
-Run the simulation with:
+You can download and run this code using any of the following methods:
+
+### Clone the repository
+
+```bash
+git clone https://github.com/EmId11/improved-100-prisoners-puzzle-strategy.git
+cd improved-100-prisoners-puzzle-strategy
+```
+
+### Run the simulation
+
+```python
+python prisoners_puzzle.py
+```
+
+## Requirements
+
+- Python 3.x
+- No external dependencies required
 
 ```python
 python prisoners_puzzle.py
