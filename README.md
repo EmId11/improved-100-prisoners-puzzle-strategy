@@ -26,9 +26,9 @@ This approach gives about a 31% success rate.
 
 ## My Improved Solution (57% Success Rate)
 
-My solution leverages the statistical distribution of numbers to make more intelligent choices about which boxes to open. The core insight is that when numbers are randomly distributed, the proportion of numbers smaller or larger than any given value should follow predictable patterns.
+The core insight is simple: in a random distribution across rows of equal size, the proportion of numbers smaller and larger than any given prisoner's number should approximately reflect their position in the range 1-100. For example, prisoner #73 should expect roughly 73% of randomly distributed numbers within each row to be smaller than 73, and about 27% to be larger.
 
-By detecting when a row contains an unexpected distribution of numbers relative to a prisoner's target, they can strategically skip to more promising rows.
+When prisoners encounter a row where this expected distribution is reached (e.g., prisoner #73 finding 7 numbers smaller than 73 or 3 numbers larger than 73 within a row of 10 boxes), they move to the next row because statistically, if the expected proportion of smaller or larger values has been found without finding their own number, it's unlikely their number will be among the remaining boxes in that row.
 
 ### How It Works
 
@@ -38,6 +38,8 @@ By detecting when a row contains an unexpected distribution of numbers relative 
    - Too many numbers larger than their target (e.g., prisoner #73 finding more than 3 numbers larger than 73)
    - The end of the current row
 3. This distribution-based approach allows for more efficient use of the 50-box limit by focusing the search on rows where the prisoner's number is statistically more likely to be found
+
+![image](https://github.com/user-attachments/assets/956e81a2-99dc-4136-a93d-50ec59d4187a)
 
 ## Installation
 
@@ -70,7 +72,7 @@ Here are the results from a simulation with 1,000,000 runs:
 ```
 FINAL RESULTS
 ============================================================
-Total simulations: 1000000
+Total simulations: 10000000
 
 Strategy 1 (chain following) success rate:    31.20%
 Strategy 2 (distribution analysis) success rate:  57.71%
