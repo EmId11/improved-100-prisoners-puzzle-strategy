@@ -67,19 +67,20 @@ python prisoners_puzzle.py
 
 Based on extensive testing with millions of simulations, the distribution-based strategy consistently achieves approximately 57% success rate, compared to the standard strategy's 31%.
 
-Here are the results from a simulation with 10,000,000 runs:
+Here are the results from a simulation with 1,000,000,000 runs:
 
 ```
 FINAL RESULTS
 ============================================================
-Total simulations: 10000000
+Total simulations: 1,000,000,000
 
-Strategy 1 (chain following) success rate:    31.20%
-Strategy 2 (distribution analysis) success rate:  57.71%
+Strategy 1 (chain following) success rate:    31.18%
+Strategy 2 (distribution analysis) success rate:  57.68%
 ============================================================
 ```
+![1_billion_simulation_runs](https://github.com/user-attachments/assets/77520471-40d1-49c5-834b-48620ea21f97)
 
-![image](https://github.com/user-attachments/assets/14bbf8e8-4e39-4b21-b825-dff875760fa9)
+
 
 
 ## How to Modify
