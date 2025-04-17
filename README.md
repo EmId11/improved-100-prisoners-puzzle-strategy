@@ -26,7 +26,7 @@ This approach gives about a 31% success rate.
 
 ## My Improved Solution (57% Success Rate)
 
-The core insight is simple: in a random distribution across rows of equal size, the proportion of numbers smaller and larger than any given prisoner's number should approximately reflect their position in the range 1-100. For example, with 10 rows of 10 boxes each, prisoner #73 should expect roughly 73% of randomly distributed numbers within each row to be smaller than 73, and about 27% to be larger.
+The core insight is simple: in a random distribution across rows of equal size, the proportion of numbers smaller and larger than any given prisoner's number should approximately reflect their position in the range 1-100. For example, prisoner #73 should expect roughly 73% of randomly distributed numbers within each row to be smaller than 73, and about 27% to be larger. 
 
 When prisoners encounter a row where this expected distribution is reached (e.g., prisoner #73 finding 7 numbers smaller than 73 or 3 numbers larger than 73 within a row of 10 boxes), they move to the next row because statistically, if the expected proportion of smaller or larger values has been found without finding their own number, it's unlikely their number will be among the remaining boxes in that row.
 
