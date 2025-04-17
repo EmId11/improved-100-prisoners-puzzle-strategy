@@ -1,6 +1,6 @@
 # Improved Solution to the 100 Prisoners Puzzle
 
-This repository contains an improved solution to the famous 100 Prisoners Problem, achieving a success rate of approximately 57% compared to the standard solution's 31%.
+This repository contains an improved solution to the famous 100 Prisoners Problem, achieving a success rate of approximately 58% compared to the standard solution's 31%.
 
 ## The Problem
 
