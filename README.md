@@ -4,7 +4,7 @@ This repository contains an improved solution to the famous 100 Prisoners Proble
 
 ## The Problem
 
-The 100 prisoners problem is a mathematical puzzle with the following setup:
+The [100 prisoners problem](https://en.wikipedia.org/wiki/100_prisoners_problem) is a mathematical puzzle with the following setup:
 
 - 100 prisoners are numbered from 1 to 100
 - 100 boxes are numbered from 1 to 100
