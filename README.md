@@ -54,7 +54,6 @@ Because when the expected number of smaller values is found, the prisoner's numb
     * This process continues until either they find their number or reach the 50-box limit.
 5. **Group Success:**
     * The entire group succeeds only if every prisoner finds their number within their 50-box limit
-      
 ![image](https://github.com/user-attachments/assets/956e81a2-99dc-4136-a93d-50ec59d4187a)
 
 **An example of a successful search (for a single prisoner):**
