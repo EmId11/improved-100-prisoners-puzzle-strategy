@@ -26,14 +26,8 @@ This approach gives about a 31% success rate.
 
 ## My Improved Solution (57% Success Rate)
 
-The core insight is simple: in a random distribution across rows of equal size, the proportion of numbers smaller and larger than any given prisoner's number should approximately reflect their position in the range 1-100. For example, prisoner #73 should expect roughly 73% of randomly distributed numbers within each row to be smaller than 73, and about 27% to be larger. 
-
-When prisoners encounter a row where this expected distribution is reached (e.g., prisoner #73 finding 7 numbers smaller than 73 or 3 numbers larger than 73 within a row of 10 boxes), they move to the next row because statistically, if the expected proportion of smaller or larger values has been found without finding their own number, it's unlikely their number will be among the remaining boxes in that row.
-
-#### *Why?* 
-Because when the expected number of smaller values is found, the prisoner's number must compete with all larger numbers for the few remaining spots, creating unfavourable odds compared to a fresh row where the distribution is reset.
-
-
+<mark>The core insight is simple:</mark> In a random distribution across rows of equal size, the proportion of box numbers smaller or larger than a prisoner's number should roughly correspond to that prisoner's position in the range 1-100. For example, a prisoner with number 70 would expect approximately 70% of randomly distributed box numbers to be smaller than 70, and less than 30% to be larger.
+When searching a row of 10 boxes, a prisoner should typically find about 7 boxes with numbers smaller than 70 and 2 boxes with numbers larger. If the prisoner encounters more than the expected threshold before finding their own number, they should move to the next row. This is because exceeding the expected threshold without finding their number makes it statistically less likely that their number appears in the remaining boxes of that row. <mark>Why?</mark> Because there will be *n* fewer boxes that could contain the prisoner's number in that row, reducing the probability (where n represents the amount by which the threshold is exceeded). Starting with a fresh row offers better chances of success.
 
 
 ### How It Works
