@@ -54,7 +54,7 @@ def strategy2(boxes):
                 
                 # Move to next row when distribution suggests prisoner's number is elsewhere
                 # or when we reach the end of the row
-                if (smaller_count == prisoner // 10 or
+                if (smaller_count == (prisoner - 1) // 10 or
                     larger_count == 10 - (prisoner // 10) or
                     i == row_end - 1):
                     last_opened_in_row[current_row] = i
