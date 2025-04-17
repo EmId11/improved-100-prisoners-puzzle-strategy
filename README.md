@@ -30,15 +30,15 @@ The core insight is simple: in a random distribution across rows of equal size, 
 
 When prisoners encounter a row where this expected distribution is reached (e.g., prisoner #73 finding 7 numbers smaller than 73 or 3 numbers larger than 73 within a row of 10 boxes), they move to the next row because statistically, if the expected proportion of smaller or larger values has been found without finding their own number, it's unlikely their number will be among the remaining boxes in that row.
 
-#### Why? 
-When the expected number of smaller values is found, the prisoner's number must compete with all larger numbers for the few remaining spots, creating unfavourable odds compared to a fresh row where the distribution is reset.
+#### *Why?* 
+Because when the expected number of smaller values is found, the prisoner's number must compete with all larger numbers for the few remaining spots, creating unfavourable odds compared to a fresh row where the distribution is reset.
 
 
 
 
 ### How It Works
 
-1. **Organize the Boxes:** We divide the 100 boxes into 10 rows of 10 boxes each. This is just a conceptual organization - the actual boxes remain in their original positions, and we're simply treating each group of 10 boxes as a "row."
+1. **Organize the Boxes:** Divide the 100 boxes into 10 rows of 10 boxes each. This is just a conceptual organization - we're simply treating each group of 10 boxes as a "row."
 2. **Search Process:**
     * Each prisoner starts with the first row and opens boxes one by one
     * As they open boxes, they count how many numbers smaller and larger than their target they've found
@@ -87,7 +87,7 @@ python prisoners_puzzle.py
 
 ## Results
 
-Based on extensive testing with millions of simulations, the distribution-based strategy consistently achieves approximately 57% success rate, compared to the standard strategy's 31%.
+Based on extensive testing with 1 billion simulation runs, the distribution-based strategy achieves a 57.68% success rate.
 
 Here are the results from a simulation with 1,000,000,000 runs:
 
