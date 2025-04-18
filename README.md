@@ -47,7 +47,9 @@ When searching a row of 10 boxes, prisoner #70 should typically find about 7 box
     * They keep applying the same rules for moving between rows.
     * This process continues until either they find their number or reach the 50-box limit.
 5. **Group Success:**
-    * The entire group succeeds only if every prisoner finds their number within their 50-box limit
+    * The entire group succeeds only if every prisoner finds their number within their 50-box limit.
+  
+**Algorithm:**
 ![image](https://github.com/user-attachments/assets/956e81a2-99dc-4136-a93d-50ec59d4187a)
 
 **An example of a successful search (for a single prisoner):**
