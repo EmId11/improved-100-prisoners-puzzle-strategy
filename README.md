@@ -100,12 +100,16 @@ Strategy 2 (distribution analysis) success rate:  57.68%
 ![image](https://github.com/user-attachments/assets/19d0d13d-071e-4148-9740-5cae8491733b)
 
 
+## Try our interactive simulator
+
+### Try it yourself! 🚀
+
+While the results above demonstrate the performance of both strategies over a billion runs, you can now explore this simulation interactively: https://100-prisoners-solution.streamlit.app/
+
+![image](https://github.com/user-attachments/assets/89bb62a3-5790-4ec6-a34c-7208c872a635)
 
 
-
-## How to Modify
-
-You can change the number of simulations by modifying the `num_simulations` variable in the `main()` function.
+> **Note:** For best performance when running large numbers of simulations, we recommend using a modern browser.
 
 ## Get in touch!
 
