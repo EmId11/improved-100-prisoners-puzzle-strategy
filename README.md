@@ -104,7 +104,7 @@ Strategy 2 (distribution analysis) success rate:  57.68%
 
 ### Try it yourself! 🚀
 
-While the results above demonstrate the performance of both strategies over a billion runs, you can now explore this simulation interactively: https://100-prisoners-solution.streamlit.app/
+While the results above demonstrate the performance of both strategies over a billion runs, you can now explore this simulation interactively: [https://100-prisoners-solution.streamlit.app/](https://100-prisoners-new-solution-simulator.streamlit.app/)
 
 ![image](https://github.com/user-attachments/assets/89bb62a3-5790-4ec6-a34c-7208c872a635)
 
